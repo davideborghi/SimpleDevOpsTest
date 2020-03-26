@@ -14,7 +14,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-steps:
+#steps:
   # Run tests and auto publish test results.
 #- task: DotNetCoreCLI@2
 #  inputs:
