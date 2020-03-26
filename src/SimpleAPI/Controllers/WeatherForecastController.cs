@@ -20,7 +20,7 @@ namespace SimpleAPI.Controllers
         
         [HttpGet]
         public ActionResult<string> Get(int id)        {
-            return "Davide Borghi";
+            return "MAx Power";
             
         }
 
