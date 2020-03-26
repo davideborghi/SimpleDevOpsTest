@@ -14,21 +14,13 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-#steps:
-  # Run tests and auto publish test results.
-#- task: DotNetCoreCLI@2
-#  inputs:
-#    command: test
-#    projects: '**/*Tests/*.csproj'
-#    arguments: '--configuration $(buildConfiguration)'
-#- script : dotnet build --configuration $(buildConfiguration)
-#    displayName: 'dotnet build $(buildConfiguration)'
-
+steps:
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
- inputs:
-   restoreSolution: '$(solution)'
+  inputs:
+    restoreSolution: '$(solution)'
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
