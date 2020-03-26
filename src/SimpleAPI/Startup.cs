@@ -37,7 +37,7 @@ namespace SimpleAPI
             }
 
             //app.UseHttpsRedirection();
-
+//just a comment to trigger build azure devops
             app.UseRouting();
 
             app.UseAuthorization();
